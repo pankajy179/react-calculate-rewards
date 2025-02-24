@@ -1,6 +1,5 @@
 import React from 'react';
-import { getMonthYear } from '../utils/dateUtils';
-import { calculatePointsForTransaction } from '../utils/pointsCalculator';
+import { getMonthYear,calculatePointsForTransaction } from '../utils/helper';
 
 const UserMonthlyRewardsTable = ({ transactions }) => {
   const monthlyRewards = transactions.reduce((acc, transaction) => {
@@ -11,7 +10,6 @@ const UserMonthlyRewardsTable = ({ transactions }) => {
       calculatePointsForTransaction(transaction.price);
     return acc;
   }, {});
-  console.log('monthly rewards', monthlyRewards);
 
   const getCustomerName = (customerId, transactions) => {
     const customer = transactions.find((item) => item.customerId == customerId);
@@ -19,6 +17,8 @@ const UserMonthlyRewardsTable = ({ transactions }) => {
   };
 
   return (
+    <>
+    <h2>Monthly Rewards</h2>
     <table>
       <thead>
         <tr>
@@ -43,6 +43,7 @@ const UserMonthlyRewardsTable = ({ transactions }) => {
         )}
       </tbody>
     </table>
+    </>
   );
 };
 

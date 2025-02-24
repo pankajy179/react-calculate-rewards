@@ -1,5 +1,5 @@
 import React from 'react';
-import { calculatePointsForTransaction } from '../utils/pointsCalculator';
+import { calculatePointsForTransaction } from '../utils/helper';
 
 const TransactionRow = ({ transaction }) => {
   const { transactionId, customerName, purchaseDate, productPurchased, price } = transaction;
@@ -11,7 +11,7 @@ const TransactionRow = ({ transaction }) => {
       <td>{customerName}</td>
       <td>{purchaseDate}</td>
       <td>{productPurchased}</td>
-      <td>${price.toFixed(2)}</td>
+      <td>${Math.floor(price).toFixed(2)}</td>
       <td>{points}</td>
     </tr>
   );

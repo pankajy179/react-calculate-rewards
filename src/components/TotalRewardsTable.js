@@ -1,5 +1,5 @@
 import React from 'react';
-import { calculatePointsForTransaction } from '../utils/pointsCalculator';
+import { calculatePointsForTransaction } from '../utils/helper';
 
 const TotalRewardsTable = ({ transactions }) => {
   const totalRewards = transactions.reduce((acc, transaction) => {
@@ -17,6 +17,8 @@ const TotalRewardsTable = ({ transactions }) => {
   };
 
   return (
+    <>
+    <h2>Total Rewards</h2>
     <table>
       <thead>
         <tr>
@@ -33,6 +35,7 @@ const TotalRewardsTable = ({ transactions }) => {
         ))}
       </tbody>
     </table>
+    </>
   );
 };
 

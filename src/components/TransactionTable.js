@@ -5,6 +5,8 @@ import '../styles/TransactionTable.css';
 const TransactionTable = ({ transactions }) => {
   
   return (
+    <>
+    <h2>Transactions</h2>
     <table className="transaction-table">
       <thead>
         <tr>
@@ -25,6 +27,7 @@ const TransactionTable = ({ transactions }) => {
         ))}
       </tbody>
     </table>
+    </>
   );
 };
 
