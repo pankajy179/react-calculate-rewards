@@ -13,7 +13,7 @@ const transactions = [
     customerName: "Mateo",
     purchaseDate: "2024-01-20",
     productPurchased: "Shirt",
-    price: "75",
+    price: 75,
   },
   {
     transactionId: 3,
@@ -30,6 +30,7 @@ const transactions = [
     purchaseDate: "2025-01-02",
     productPurchased: "Mouse",
     price: 100,
-  },];
+  },
+];
 
 export default transactions;
