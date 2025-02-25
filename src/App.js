@@ -4,7 +4,8 @@ import TransactionTable from './components/TransactionTable';
 import UserMonthlyRewardsTable from './components/UserMonthlyRewardsTable';
 import TotalRewardsTable from './components/TotalRewardsTable';
 import LoadingSpinner from './components/LoadingSpinner';
-import './styles/App.css'; 
+import ErrorBoundary from './components/ErrorBoundary';
+import './styles/App.css';
 
 const App = () => {
   const [transactions, setTransactions] = useState([]);
@@ -35,12 +36,12 @@ const App = () => {
   }
 
   return (
-    <div className="App">
+    <ErrorBoundary className="App">
       <h1>Customer Rewards</h1>
       <TransactionTable transactions={transactions} />
       <UserMonthlyRewardsTable transactions={transactions} />
       <TotalRewardsTable transactions={transactions} />
-    </div>
+    </ErrorBoundary>
   );
 };
 

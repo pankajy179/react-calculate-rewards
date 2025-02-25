@@ -11,7 +11,8 @@ const TransactionRow = ({ transaction }) => {
       <td>{customerName}</td>
       <td>{purchaseDate}</td>
       <td>{productPurchased}</td>
-      <td>${Math.floor(price).toFixed(2)}</td>
+      {/* <td>${Math.floor(price).toFixed(2)}</td> */}
+      <td>{price.toFixed(2)}</td>
       <td>{points}</td>
     </tr>
   );
