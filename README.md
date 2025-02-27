@@ -27,7 +27,8 @@ Installation and running aplication
 
 Screenshots
 
-![Alt text](image.png)
-
-
-
+![Initial loading](/src/screenshots/loading.png)
+![Customer Rewards](/src/screenshots/image.png)
+![Monthly Rewards Table](/src/screenshots/image-1.png)
+![Total Rewards Table](/src/screenshots/image-2.png)
+![Error Page](/src/screenshots/image-3.png)
