@@ -25,5 +25,9 @@ Installation and running aplication
 3. Start development server: npm start
 4. Access application: http://localhost:3000
 
+Screenshots
+
+![Alt text](image.png)
+
 
 
