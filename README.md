@@ -27,8 +27,8 @@ Installation and running aplication
 
 Screenshots
 
-![Initial loading](/src/screenshots/loading.png)
-![Customer Rewards](/src/screenshots/image.png)
-![Monthly Rewards Table](/src/screenshots/image-1.png)
-![Total Rewards Table](/src/screenshots/image-2.png)
-![Error Page](/src/screenshots/image-3.png)
+![Loader](/public/screenshots/loader.png)
+![Customer Rewards](/public/screenshots/transaction.png)
+![Monthly Rewards Table](/public/screenshots/monthly_rewards.png)
+![Total Rewards Table](/public/screenshots/total_rewards.png)
+![Error Page](/public/screenshots/error_boundary.png)
